@@ -1,3 +1,5 @@
 Django==3.1.2
 drf-jwt==1.17.2
 Gunicorn==20.0.4
+django-prometheus==2.1.0
+

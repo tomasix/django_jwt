@@ -1,4 +1,6 @@
 # Django JWT Auth
+Please keep in mind that this is only demo for developement / education environment, don't use it as it is in production.
+
 
 ## Installation
 ```bash
@@ -24,8 +26,15 @@ api/v1/token-refresh/
 api/v1/token-verify/ 
 ``` curl -X POST -H "Content-Type: application/json" -d '{"token":"yourtoken"}' http://localhost:8000/api/v1/token-verify/ ```
 
+
+
+
+There is Prometheus monitoring enabled, for detailed HOWTO please see: https://www.sipios.com/blog-tech/monitoring
+
+
 ## Useful links
 
  - https://docs.djangoproject.com/en/3.1/
  - https://styria-digital.github.io/django-rest-framework-jwt/
  - https://docs.gunicorn.org/en/latest/index.html
+ - https://prometheus.io/
