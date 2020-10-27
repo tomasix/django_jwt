@@ -7,7 +7,7 @@ source env/bin/activate
 pip3 install -r requirements.txt
 python3 manage.py migrate
 python3 manage.py createsuperuser
-python3 manage.py runserver
+gunicorn django_login.wsgi
 ```
 
 ## Usage
@@ -26,5 +26,6 @@ api/v1/token-verify/
 
 ## Useful links
 
-https://docs.djangoproject.com/en/3.1/
-https://styria-digital.github.io/django-rest-framework-jwt/
+ - https://docs.djangoproject.com/en/3.1/
+ - https://styria-digital.github.io/django-rest-framework-jwt/
+ - https://docs.gunicorn.org/en/latest/index.html
